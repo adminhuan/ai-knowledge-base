@@ -20,7 +20,15 @@
 
 **后端：** FastAPI + PostgreSQL + pgvector + Redis
 
-## 快速开始
+## 一键部署
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/adminhuan/ai-knowledge-base/main/deploy.sh | bash
+```
+
+自动安装 Docker、Python，克隆项目并启动数据库。
+
+## 手动部署
 
 ### 1. 启动数据库
 
