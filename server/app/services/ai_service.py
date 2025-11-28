@@ -226,7 +226,7 @@ class AIService:
         user_id: int,
         conversation_id: int,
         message: str,
-        use_knowledge: bool = True,
+        use_knowledge: bool = False,
         web_search: bool = False
     ) -> dict:
         """AI对话（带知识库RAG + 可选联网搜索 + 网页抓取）"""
