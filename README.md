@@ -22,11 +22,17 @@
 
 ## 一键部署
 
+**国内服务器（推荐）：**
+```bash
+curl -fsSL https://gitee.com/2201_75827989/zhi_shi_ku/raw/main/deploy-cn.sh | bash
+```
+
+**国外服务器：**
 ```bash
 curl -fsSL https://raw.githubusercontent.com/adminhuan/ai-knowledge-base/main/deploy.sh | bash
 ```
 
-自动安装 Docker、Python，克隆项目并启动数据库。
+自动安装 Docker、Python，克隆项目并启动数据库。国内版已配置阿里云 Docker 镜像 + 清华 pip 镜像。
 
 ## 手动部署
 
