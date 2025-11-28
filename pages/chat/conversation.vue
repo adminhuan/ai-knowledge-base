@@ -253,13 +253,6 @@ const loadOlderMessages = async () => {
 	})
 }
 
-const loadMore = async () => {
-	if (!hasMore.value || loadingMore.value) return
-	loadingMore.value = true
-	page.value += 1
-	await loadMessages()
-	loadingMore.value = false
-}
 </script>
 
 <style scoped>

@@ -3,7 +3,7 @@
  */
 
 // 环境：development | production
-const ENV = 'development'
+const ENV = 'production'
 
 const config = {
 	development: {
@@ -11,8 +11,8 @@ const config = {
 		WS_URL: 'ws://localhost:8080'
 	},
 	production: {
-		API_BASE_URL: 'https://your-api-domain.com',
-		WS_URL: 'wss://your-api-domain.com'
+		API_BASE_URL: 'https://z.arshop.top',
+		WS_URL: 'wss://z.arshop.top'
 	}
 }
 
