@@ -1,28 +1,24 @@
-# AI 知识库助手
+# 个人智识库
 
-一个基于 UniApp + FastAPI 的智能知识库管理系统，支持 AI 对话、知识检索、文件解析等功能。
+> 智能 + 知识 = 智识库
 
-## 功能特性
+一个简易的私人知识库，随时随地记录你的想法和知识，AI 智能检索让你的知识触手可及。
 
-- 🤖 **AI 对话** - 支持多种大模型（智谱GLM、通义千问等）
-- 📚 **知识库管理** - 支持知识的增删改查、分类、标签
-- 🔍 **语义搜索** - 基于向量的智能知识检索
-- 📄 **文件解析** - 支持 PDF、Word、Excel、PPT 等文档解析
-- 🖼️ **图片识别** - 支持图片内容识别和分析
-- 🌐 **联网搜索** - 支持实时联网获取最新信息
-- ☁️ **云端存储** - 支持腾讯云 COS 文件存储
-- 🔐 **用户系统** - 支持注册、登录、个人设置
+## 特点
+
+- 📝 **随时记录** - 随时随地记录想法、笔记、知识
+- 🔍 **智能检索** - AI 语义搜索，快速找到你需要的内容
+- 🤖 **AI 对话** - 与 AI 聊天，基于你的知识库回答问题
+- 📄 **文件解析** - 支持 PDF、Word、Excel、PPT 文档导入
+- 🖼️ **图片识别** - 拍照或上传图片，AI 自动识别内容
+- 🌐 **联网搜索** - AI 联网获取最新信息
+- ☁️ **云端同步** - 数据云端存储，多端同步
 
 ## 技术栈
 
-**前端：**
-- UniApp (Vue 3)
-- 支持 H5、微信小程序、App
+**前端：** UniApp (Vue 3) - 支持 H5、微信小程序、App
 
-**后端：**
-- FastAPI (Python 3.10+)
-- PostgreSQL + pgvector (向量数据库)
-- Redis (缓存)
+**后端：** FastAPI + PostgreSQL + pgvector + Redis
 
 ## 快速开始
 
@@ -52,46 +48,25 @@ uvicorn main:app --host 0.0.0.0 --port 8080 --reload
 
 ### 4. 启动前端
 
-```bash
-# 使用 HBuilderX 打开项目
-# 运行到浏览器或其他平台
-```
+使用 HBuilderX 打开项目，运行到浏览器或其他平台
 
-## 环境变量说明
+## 环境变量
 
 | 变量 | 说明 | 申请地址 |
 |------|------|----------|
-| `ZHIPU_API_KEY` | 智谱 AI 密钥（对话+向量+视觉） | https://open.bigmodel.cn/ |
-| `QWEN_API_KEY` | 通义千问密钥（联网搜索+文件解析） | https://dashscope.console.aliyun.com/ |
-| `COS_SECRET_ID/KEY` | 腾讯云 COS 密钥 | https://console.cloud.tencent.com/cos |
+| `ZHIPU_API_KEY` | 智谱 AI（对话+视觉+向量） | https://open.bigmodel.cn/ |
+| `QWEN_API_KEY` | 通义千问（联网搜索+文件解析） | https://dashscope.console.aliyun.com/ |
+| `COS_SECRET_ID/KEY` | 腾讯云 COS（文件存储） | https://console.cloud.tencent.com/cos |
 
-## 项目结构
+## 使用的 AI 模型
 
-```
-├── api/                 # 前端 API 封装
-├── components/          # 前端组件
-├── pages/               # 前端页面
-├── server/              # 后端代码
-│   ├── app/
-│   │   ├── api/         # API 路由
-│   │   ├── core/        # 核心配置
-│   │   ├── models/      # 数据模型
-│   │   └── services/    # 业务服务
-│   ├── main.py          # 入口文件
-│   └── requirements.txt
-├── static/              # 静态资源
-└── docker-compose.yml   # Docker 配置
-```
-
-## 免费模型推荐
-
-本项目默认使用以下免费模型：
-
-- **智谱 GLM-4-Flash** - 对话模型（免费）
-- **智谱 GLM-4V-Flash** - 视觉模型（免费）
-- **智谱 Embedding-2** - 向量模型（免费）
-- **通义 Qwen-Turbo** - 联网搜索（有免费额度）
-- **通义 Qwen-Doc-Turbo** - 文件解析（有免费额度）
+| 功能 | 模型 | 费用 |
+|------|------|------|
+| 对话 | GLM-4-Flash | 免费 |
+| 视觉识别 | GLM-4V-Flash | 免费 |
+| 向量检索 | Embedding-2 | 付费 |
+| 联网搜索 | Qwen-Turbo | 有免费额度 |
+| 文件解析 | Qwen-Doc-Turbo | 有免费额度 |
 
 ## License
 
