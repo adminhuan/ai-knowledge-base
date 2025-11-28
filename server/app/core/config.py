@@ -19,10 +19,10 @@ class Settings(BaseSettings):
     # 智谱AI (聊天 + Embedding + 视觉) - 免费模型
     ZHIPU_API_KEY: str = ""
     ZHIPU_BASE_URL: str = "https://open.bigmodel.cn/api/paas/v4"
-    CHAT_MODEL: str = "glm-4-flash-250414"
+    CHAT_MODEL: str = "glm-4.5-flash"
     EMBEDDING_MODEL: str = "embedding-2"
     EMBEDDING_DIMENSION: int = 1024
-    VISION_MODELS: str = "glm-4v-flash,glm-4.1v-thinking-flash"
+    VISION_MODELS: str = "glm-4.5-flash"
     
     # 通义千问 (联网搜索 + 文件解析)
     QWEN_API_KEY: str = ""
