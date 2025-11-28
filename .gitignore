@@ -1,1 +1,37 @@
- 
+# 环境变量（包含密钥）
+.env
+server/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+server/venv/
+.venv/
+ENV/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# UniApp 编译产物
+unpackage/
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# 日志
+*.log
+server/*.log
+
+# 临时文件
+*.tmp
+*.temp

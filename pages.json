@@ -1,0 +1,141 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/index",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/chat/index",
+			"style": {
+				"navigationBarTitleText": "工作台",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom" 
+			}
+		},
+		{
+			"path": "pages/chat/conversation",
+			"style": {
+				"navigationBarTitleText": "对话",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/knowledge/index",
+			"style": {
+				"navigationBarTitleText": "知识库",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/knowledge/detail",
+			"style": {
+				"navigationBarTitleText": "知识详情",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/knowledge/search",
+			"style": {
+				"navigationBarTitleText": "搜索知识库",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/monitor/index",
+			"style": {
+				"navigationBarTitleText": "云端文件",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/category/index",
+			"style": {
+				"navigationBarTitleText": "分类管理",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/stats/index",
+			"style": {
+				"navigationBarTitleText": "数据统计",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/index",
+			"style": {
+				"navigationBarTitleText": "管理后台",
+				"enablePullDownRefresh": false,
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mine/settings",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/settings/background",
+			"style": {
+				"navigationBarTitleText": "背景设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/settings/ai",
+			"style": {
+				"navigationBarTitleText": "AI 设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/settings/avatar",
+			"style": {
+				"navigationBarTitleText": "头像设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/settings/account",
+			"style": {
+				"navigationBarTitleText": "账号设置",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/ai-usage",
+			"style": {
+				"navigationBarTitleText": "AI 使用监控",
+				"enablePullDownRefresh": false
+			}
+		},
+		{
+			"path": "pages/mine/server-monitor",
+			"style": {
+				"navigationBarTitleText": "后台监控",
+				"enablePullDownRefresh": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "企业助手",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#F2F3F5"
+	},
+	"tabBar": {
+		"height": "0px",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [
+			{ "pagePath": "pages/chat/index", "text": "" },
+			{ "pagePath": "pages/knowledge/index", "text": "" }
+		]
+	}
+}
