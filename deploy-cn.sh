@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 个人智识库 - 一键部署脚本（国内版）
-# 使用方法: curl -fsSL https://gitee.com/2201_75827989/zhi_shi_ku/raw/main/deploy-cn.sh | bash
+# 使用方法: curl -fsSL https://gitcode.com/2201_75827989/zhi_shi_ku/raw/main/deploy-cn.sh | bash
 
 set -e
 
@@ -104,15 +104,15 @@ fi
 config_pip_mirror
 
 echo ""
-echo ">>> 克隆项目（Gitee）..."
+echo ">>> 克隆项目（GitCode）..."
 
-# 克隆项目（使用 Gitee）
+# 克隆项目（使用 GitCode）
 if [ -d "zhi_shi_ku" ]; then
     echo "项目目录已存在，正在更新..."
     cd zhi_shi_ku
     git pull
 else
-    git clone https://gitee.com/2201_75827989/zhi_shi_ku.git
+    git clone https://gitcode.com/2201_75827989/zhi_shi_ku.git
     cd zhi_shi_ku
 fi
 
