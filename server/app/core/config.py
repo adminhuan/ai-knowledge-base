@@ -22,7 +22,7 @@ class Settings(BaseSettings):
     CHAT_MODEL: str = "glm-4.5-flash"
     EMBEDDING_MODEL: str = "embedding-2"
     EMBEDDING_DIMENSION: int = 1024
-    VISION_MODELS: str = "glm-4.5-flash"
+    VISION_MODELS: str = "glm-4v-flash"
     
     # 通义千问 (联网搜索 + 文件解析)
     QWEN_API_KEY: str = ""
