@@ -710,6 +710,7 @@ class AIService:
                 )
                 
                 result = response.json()
+                print(f"[DEBUG] 图片解析API响应 model={vision_model}: {result}")
                 
                 if "choices" in result:
                     usage = result.get("usage", {})
@@ -723,9 +724,11 @@ class AIService:
                     }
                 else:
                     error_msg = result.get("error", {}).get("message", "图片解析失败")
-                    return {"success": False, "error": error_msg}
+                    print(f"[ERROR] 图片解析失败: {result}")
+                    return {"success": False, "error": f"图片解析失败: {error_msg}"}
                     
         except Exception as e:
+            print(f"[ERROR] 图片解析异常: {e}")
             return {"success": False, "error": str(e)}
     
     async def parse_image_with_model(self, image_data_url: str, prompt: str, model: str = None) -> dict:
